@@ -53,7 +53,7 @@ Adafruit_FT6206::Adafruit_FT6206() { touches = 0; }
     @returns True if an FT6206 is found, false on any failure
 */
 /**************************************************************************/
-boolean Adafruit_FT6206::begin(uint8_t sda, uint8_t scl, uint8_t thresh) {
+boolean Adafruit_FT6206::begin(int sda, int scl, uint8_t thresh) {
   Wire.begin(sda, scl);
 
 #ifdef FT6206_DEBUG
