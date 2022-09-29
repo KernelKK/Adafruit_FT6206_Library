@@ -61,7 +61,7 @@ public:
 class Adafruit_FT6206 {
 public:
   Adafruit_FT6206(void);
-  boolean begin(uint8_t thresh = FT62XX_DEFAULT_THRESHOLD);
+  boolean begin(int sda, int scl, uint8_t thresh = FT62XX_DEFAULT_THRESHOLD);
   uint8_t touched(void);
   TS_Point getPoint(uint8_t n = 0);
 
